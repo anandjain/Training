@@ -40,3 +40,27 @@ packages.each do |package_name|
   end
 end
 ```
+
+```
+
+knife node run_list remove client "recipe[first_cookbook]"
+
+
+vim ~/chef-repo/roles/packages.json
+
+{
+	"name" : "installer"
+	"override_attributes" :{
+	"first_cookbook" :{
+		"packages" : ["watch", "nmap", "telnet"]
+	}
+},
+	"run_list" : [
+		"recipe[first_cookbook]"
+	]	
+}
+
+knife role from file packages.json
+
+knife node run_list add client "role[installer]"
+```
