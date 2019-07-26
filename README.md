@@ -1,4 +1,5 @@
-`vim ~/chef-repo/cookbooks/first_cookbook/attributes/default.rb`
+```
+vim ~/chef-repo/cookbooks/first_cookbook/attributes/default.rb`
 default['first_cookbook']['name'] = "Anand Jain" 
 
 `vim ~/chef-repo/cookbooks/first_cookbook/templates/motd.erb`
@@ -21,6 +22,7 @@ vim ~/chef-repo/cookbooks/first_cookbook/attributes/default.rb
 default['first_cookbook']['packages'] = [ "git", "tree", "wget"]
 
 
+
 vim ~/chef-repo/cookbooks/first_cookbook/recipes/default.rb
 
 packages = node['first_cookbook']['packages']
@@ -36,3 +38,4 @@ end`
     action :purge
   end
 end`
+```
