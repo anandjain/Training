@@ -70,4 +70,6 @@ knife node run_list add client "role[installer]"
 
 http://agiletesting.blogspot.com/2010/07/working-with-chef-cookbooks-and-roles.html
 
+https://blog.eduonix.com/system-programming/learn-write-chef-recipes/
+
 ```
