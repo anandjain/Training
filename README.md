@@ -73,3 +73,10 @@ http://agiletesting.blogspot.com/2010/07/working-with-chef-cookbooks-and-roles.h
 https://blog.eduonix.com/system-programming/learn-write-chef-recipes/
 
 ```
+
+
+```
+
+knife node environment set infosec11 opsstack2.0
+
+```
